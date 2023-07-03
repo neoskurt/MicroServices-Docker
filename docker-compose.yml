@@ -1,0 +1,20 @@
+services:
+  authors:
+    build: ./author
+    ports: 
+      - 3002:3002
+    command: npm run start index-author.js
+
+  books:
+    build: ./book
+    ports: 
+      - 3003:3003
+    command: npm run start index-book.js
+
+  categorys:
+    build: ./category
+    ports: 
+      - 3001:3001
+    command: npm run start index-category.js
+
+ 
